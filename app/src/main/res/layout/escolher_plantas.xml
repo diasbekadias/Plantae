@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fon"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -25,16 +26,97 @@
             android:background="@drawable/configuracoes_escolher_planta"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texto_minhasplantas">
+            app:layout_constraintTop_toBottomOf="@+id/texto_minhasplantas"
+            app:layout_constraintVertical_bias="0.0">
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="230dp"
-                android:layout_height="384dp"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/coentro"
-                tools:layout_editor_absoluteX="82dp"
-                tools:layout_editor_absoluteY="85dp" />
+                tools:layout_editor_absoluteY="61dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/cebolinha"
+                tools:layout_editor_absoluteY="61dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/cacto"
+                tools:layout_editor_absoluteY="308dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/samambaia"
+                tools:layout_editor_absoluteY="308dp" />
+
+            <TextView
+                android:id="@+id/escolher_coentro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:fontFamily="serif"
+                android:text="Coentro"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/escolher_cebolinha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="63dp"
+                android:fontFamily="serif"
+                android:text="Cebolinha"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/escolher_cacto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Cacto"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.603"
+                tools:layout_editor_absoluteX="73dp" />
+
+            <TextView
+                android:id="@+id/escolher_samambaia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samambaia"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:layout_constraintVertical_bias="0.603"
+                tools:layout_editor_absoluteX="246dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
