@@ -26,6 +26,10 @@
         <activity
             android:name=".AdicionarPlantasActivity"
             android:exported="false" />
+        <activity
+            android:name=".EscolherPlantas"
+            android:exported="false">
+        </activity>
 
     </application>
 
