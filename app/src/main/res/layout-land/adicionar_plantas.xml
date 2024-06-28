@@ -62,7 +62,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/plantinha_decor1"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
@@ -72,7 +72,7 @@
         app:srcCompat="@drawable/plantinha" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/plantinha_decor1"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"

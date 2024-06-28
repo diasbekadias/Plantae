@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <solid
-        android:color="#7bb946"/>
+    <!-- Coentro -->
+    <ImageView
+        android:id="@+id/coentro"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/coentro"
+        android:scaleType="centerCrop"
+        android:background="@drawable/contorno_circular_das_plantas"/>
 
-    <corners
-        android:topLeftRadius="20dp"
-        android:topRightRadius="20dp"
-        android:bottomLeftRadius="20dp"
-        android:bottomRightRadius="20dp"/>
+    <!-- Cebolinha -->
+    <ImageView
+        android:id="@+id/cebolinha"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/coentro"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/cebolinha"
+        android:scaleType="centerCrop"
+        android:background="@drawable/contorno_circular_das_plantas"/>
 
-</shape>
+    <!-- Samambaia -->
+    <ImageView
+        android:id="@+id/samambaia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/cebolinha"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/samambaia"
+        android:scaleType="centerCrop"
+        android:background="@drawable/contorno_circular_das_plantas"/>
+
+    <!-- Cacto -->
+    <ImageView
+        android:id="@+id/cacto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/samambaia"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/cacto"
+        android:scaleType="centerCrop"
+        android:background="@drawable/contorno_circular_das_plantas"/>
+
+</RelativeLayout>

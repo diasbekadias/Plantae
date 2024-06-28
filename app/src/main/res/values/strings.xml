@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Plantae</string>
+    <string name="choose_photo" />
+    <string name="camera_button_description" />
 </resources>
